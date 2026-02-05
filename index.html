@@ -1,185 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Wankitboklang Jyrwa - Resume</title>
-    <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f4f6f8;
-        margin: 0;
-        padding: 0;
-    }
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .resume {
-        max-width: 900px;
-        margin: 30px auto;
-        background: #ffffff;
-        padding: 30px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+<style>
+:root{
+  --bg:#020617;
+  --card:#0f172a;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.6}
 
-    header {
-        text-align: center;
-        border-bottom: 2px solid #333;
-        padding-bottom: 15px;
-    }
+header{
+  min-height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+  text-align:center;
+}
+.hero h1{font-size:2.4rem}
+.hero span{color:var(--accent)}
+.hero p{color:var(--muted);margin:1rem 0 1.5rem}
+.hero a{
+  background:var(--accent);
+  color:#020617;
+  padding:.6rem 1.4rem;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:600;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 32px;
-        color: #333;
-    }
+section{padding:3rem 1.5rem;max-width:900px;margin:auto}
+section h2{font-size:1.6rem;margin-bottom:1.2rem;color:var(--accent)}
 
-    .title {
-        font-size: 18px;
-        color: #555;
-    }
+.about,.skills,.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.2rem;
+}
 
-    .contact {
-        font-size: 14px;
-        color: #666;
-    }
+.card{
+  background:var(--card);
+  padding:1.4rem;
+  border-radius:14px;
+}
 
-    section {
-        margin-top: 25px;
-    }
+.card h3{color:var(--accent);margin-bottom:.4rem}
+.card p{color:var(--muted);font-size:.95rem}
 
-    section h2 {
-        font-size: 22px;
-        color: #222;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 5px;
-    }
+.contact{text-align:center}
+.contact a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
 
-    .item {
-        margin-top: 10px;
-    }
-
-    .item h3 {
-        margin: 0;
-        font-size: 18px;
-        color: #333;
-    }
-
-    .item span {
-        font-size: 14px;
-        color: #666;
-    }
-
-    .skills {
-        list-style-type: square;
-        padding-left: 20px;
-    }
-
-    .skills li {
-        margin: 5px 0;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 14px;
-        color: #777;
-    }
-    </style>
+footer{
+  text-align:center;
+  padding:1.5rem;
+  font-size:.85rem;
+  color:var(--muted);
+}
+</style>
 </head>
+
 <body>
 
-    <div class="resume">
-        <!-- Header -->
-        <header>
-            <h1>Wankitboklang Jyrwa</h1>
-            <p class="title">MCA Student | Aspiring Software Developer</p>
-            <p class="contact">
-                Assam, India | 
-                Email: kit@gmail.com | 
-                Phone: +91-1234567890
-            </p>
-        </header>
+<header>
+  <div class="hero">
+    <h1>Hi, I’m <span>Wankitboklang Jyrwa</span></h1>
+    <p>Front-end developer creating clean and responsive websites.</p>
+    <a href="#projects">My Work</a>
+  </div>
+</header>
 
-        <!-- Profile -->
-        <section>
-            <h2>Profile</h2>
-            <p>
-                Motivated MCA student at Assam Don Bosco University with a strong foundation
-                in computer applications, programming, and problem-solving. Seeking
-                opportunities to apply technical skills in real-world projects and
-                professional environments.
-            </p>
-        </section>
-
-        <!-- Education -->
-        <section>
-            <h2>Education</h2>
-            <div class="item">
-                <h3>Master of Computer Applications (MCA)</h3>
-                <span>Assam Don Bosco University</span>
-                <p>Currently Pursuing</p>
-            </div>
-
-            <div class="item">
-                <h3>Bachelor’s Degree</h3>
-                <span>University Name: Shillong College</span>
-                <p>Year of Completion: 2025</p>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section>
-            <h2>Technical Skills</h2>
-            <ul class="skills">
-                <li>HTML, CSS, JavaScript</li>
-                <li>Java / Python</li>
-                <li>MySQL / Database Management</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
-
-        <!-- Projects -->
-        <section>
-            <h2>Projects</h2>
-            <div class="item">
-                <h3>Student Management System</h3>
-                <p>
-                    Developed a web-based application to manage student records using
-                    HTML, CSS, JavaScript, and MySQL.
-                </p>
-            </div>
-
-            <div class="item">
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                    Designed and developed a responsive portfolio website to showcase
-                    projects and technical skills.
-                </p>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section>
-            <h2>Experience</h2>
-            <p>
-                Academic projects and hands-on experience gained during MCA coursework,
-                focusing on software development and problem-solving.
-            </p>
-        </section>
-
-        <!-- Certifications -->
-        <section>
-            <h2>Certifications</h2>
-            <ul>
-                <li>Web Development Certification</li>
-                <li>Programming in Java / Python</li>
-            </ul>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>© 2026 Wankitboklang Jyrwa</p>
-        </footer>
+<section>
+  <h2>About</h2>
+  <div class="about">
+    <div class="card">
+      <p>I enjoy building modern, user-friendly interfaces using HTML and CSS.</p>
     </div>
+    <div class="card">
+      <p>I focus on clean code, good design, and responsive layouts.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>HTML</h3><p>Semantic structure</p></div>
+    <div class="card"><h3>CSS</h3><p>Responsive design</p></div>
+    <div class="card"><h3>UI Design</h3><p>Clean layouts</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>Personal portfolio with dark theme UI.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Minimal product landing page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email me at</p>
+  <a href="mailto:youremail@example.com">youremail@example.com</a>
+</section>
+
+<footer>
+  © 2026 Your Name
+</footer>
 
 </body>
 </html>
